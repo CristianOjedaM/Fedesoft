@@ -1,6 +1,7 @@
-*{   
+body{   
     font-family:sans-serif;
-	margin: 0;
+	margin: 0;	
+	background-color:#F6F6F6;
 }
 
 .align-left{
@@ -25,7 +26,7 @@ header{
 nav {
 	padding-top: 40px;
     display: flex;
-    margin: 0 13% 0 13%;
+    margin: 0 8% 0 8%;
 }
 nav div{
     width:33%;
@@ -56,6 +57,7 @@ nav a:hover{
 section{
     display: flex;
     min-height: 100%;
+	margin-bottom:3%;
 }
 
 article{
@@ -86,11 +88,13 @@ article p{
 article>div:nth-child(1){
     margin-top: 8%;
     margin-left: 30%;
-    width: 500px;    
+    width: 500px;   
+	overflow:hidden;	
 }
 
 article>div:nth-child(2){
     text-align: right;
+	overflow:hidden;
 }
 
 span[price]
@@ -133,4 +137,36 @@ article:nth-child(2) p{
 
 article:nth-child(2)>div:nth-child(1){   
     margin-left: 10%;   
+}
+
+/* Fin Panel Derecho*/
+
+[containerSecundary]{
+	position:relative;
+	display:flex;
+	padding-top: 10%;
+}
+
+[containerSecundary]>div{
+	width:50%;
+}
+
+[containerSecundary] img{
+	width:30rem;
+}
+
+[containerSecundary] h2{
+	color:#43525A;
+	font-size:2.5rem;
+	font-weight: normal;
+}
+
+[containerSecundary] p{	
+    margin-top:  20px;   
+    line-height: 160%;
+    color:#43525A;
+}
+
+[containerSecundary]>div:nth-child(1){
+	padding:0 10% 0 5%;	
 }
